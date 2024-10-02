@@ -8,7 +8,7 @@ from keras.src.utils import to_categorical
 # Загрузка данных MNIST
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 
-# Нормализация входных данных
+# Преобразование входных данных
 X_train = X_train.reshape(-1, 28, 28, 1).astype('float32') / 255
 X_test = X_test.reshape(-1, 28, 28, 1).astype('float32') / 255
 
